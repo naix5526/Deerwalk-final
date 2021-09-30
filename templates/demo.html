@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Dog Breed Predictor</h1>
+
+    <form action="{% url 'image' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" id="image" name="image">
+    <input type="submit" value = "Submit">
+    </form>
+
+{% endblock %}
+

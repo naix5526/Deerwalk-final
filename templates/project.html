@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+     <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="{% static 'images/movie.png' %}" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Movie Recommendation System</h3>
+                        <p>
+                            This is a simple movie recommendation system. I have used Content Based Recommendation technique for this particular project. At an abstract level the system takes an input from the user i.e the user has to give the movie of their choice and the system in turn will recommend them with the top 5 movies that are similar to the user's input.
+
+                        </p>
+                        <a href="https://github.com/naix5526/movie_recommender">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="{% static 'images/dashboard.jpg' %}" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Nepse Floorsheet Tracker</h3>
+                        <p>
+                            Wanna know which Stocks did a particular Broker bought, then Nepse Floorsheet Tracker is the perfect Dashboard for you.
+                            I scraped Nepse's Floorsheet data to create a dashboard that certainly has helped with my investment decision by following
+                            how big Stock Brokers of Nepal carry out their purchasing of stocks.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="{% static 'images/project.jpg' %}" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Text Extraction from Image</h3>
+                        <p>
+                            Feeling bored of manually typing things written on hard copy paper. Text Extraction App build by using Flask is the best way
+                            to easily extract text from a particular image
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+
+<div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+
+            <li>Python</li>
+            <li>Power BI</li>
+            <li>Open CV</li>
+            <li>Node.js</li>
+            <li>C</li>
+
+            <li>C++</li>
+
+            <li>JavaScript</li>
+
+
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Streamlit</li>
+            <li>Mongo Db</li>
+            <li>My SQL</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+{% endblock %}
